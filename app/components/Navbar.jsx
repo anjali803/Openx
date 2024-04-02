@@ -5,7 +5,7 @@ const Navbar = () => {
     <nav className="bg-gradient-to-r from-green-500 to-black p-4 flex justify-between items-center">
       {/* Left Side Logo */}
       <div className="flex items-center">
-        <span className="text-white text-xl font-bold">OpenX</span>
+        <span className="text-white text-5xl font-bold ml-20 ">OpenX</span>
       </div>
 
       {/* Centered Links */}
@@ -31,8 +31,8 @@ const Navbar = () => {
       </div>
 
       {/* Right Side Button */}
-      <div>
-        <button className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded">
+      <div className="mr-80">
+        <button className="bg-green-900 hover:bg-green-600 text-white font-bold py-2 px-6  rounded">
           Contact Us
         </button>
       </div>
