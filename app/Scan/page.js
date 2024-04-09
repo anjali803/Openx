@@ -1,41 +1,77 @@
-import Link from 'next/link';
-import { FaPhone, FaLinkedin, FaWhatsapp } from 'react-icons/fa'; // Import icons from react-icons library
-import Navbar from '../components/Navbar';
+
 
 const CyberSecurityPage = () => {
   return (
     <>
-    <Navbar/>
-    <div className="flex justify-center items-center bg-gradient-to-r from-green-500 to-black min-h-screen">
+    {/* Navbar */}
+    <nav className="bg-gradient-to-r from-green-500 to-black p-4 flex justify-between items-center">
+      {/* Left Side Logo */}
+      <div className="flex items-center">
+        <span className="text-white text-5xl font-bold ml-20 ">OpenX</span>
+      </div>
 
-<div className="container mx-auto px-4 py-8">
-  <h1 className="text-3xl text-white font-bold mb-4">Cyber Security Solutions for Organizations with Critical Infrastructure</h1>
-  <p className="text-lg text-white mb-8">The scanner Scope is too small. Don't use it for professional audits.</p>
+      {/* Centered Links */}
+      <div className="flex justify-center">
+        <a href="/" className="text-white mx-4 hover:text-gray-300">
+          Home
+        </a>
+        <a href="/Scan" className="text-white mx-4 hover:text-gray-300">
+          Scan
+        </a>
+        <a href="/#about" className="text-white mx-4 hover:text-gray-300">
+          About
+        </a>
+        <a href="/#service" className="text-white mx-4 hover:text-gray-300">
+          Service
+        </a>
+        <a href="/#pricing" className="text-white mx-4 hover:text-gray-300">
+          Pricing
+        </a>
+        <a href="/#faq" className="text-white mx-4 hover:text-gray-300">
+          FAQ
+        </a>
+      </div>
 
-  <form className="mb-8">
-    <button className="bg-gray-600 text-white px-6 py-3 rounded-md mr-3 mb-3">BETA</button>
+      {/* Right Side Button */}
+      <div className="mr-80">
+        <button className="bg-green-900 hover:bg-green-600 text-white font-bold py-2 px-6  rounded">
+          Contact Us
+        </button>
+      </div>
+    </nav>
+    
+    <div className="flex  justify-center items-center bg-gradient-to-r from-green-500 to-black min-h-screen  " >
 
-    {/* Search bar */}
+<div className="container ml-40 mb-40 px-4 py-8 animate-fade-up ">
+  <h1 className="text-4xl text-white font-bold mb-4">Cyber Security Solutions for Organizations  <br/> with Critical Infrastructure</h1>
+  <div className='flex'> <p className="text-lg text-white mb-8">The scanner Scope is too small. Don't use it for professional audits.</p>
+  {/* <button className="bg-gray-600 text-white  rounded-md ml-2 p-1 w-16 h-8">BETA</button> */}
+  <a className="position-absolute top-1 end-0 bg-gray-600 text-light p-2 rounded small h-9" style={{ boxShadow: '0 0 5px rgba(255, 255, 255, 0.5)', textDecoration: 'none', marginLeft: '10px' }}>
+                    BETA
+                  </a> 
+</div>
+ 
+  <form className="mb-8 ">
+
+
+ 
     <div className="flex items-center mb-4">
       <input type="text" placeholder="Enter URL" className="border border-gray-300 px-4 py-2 rounded-l-md focus:outline-solid-gray-2px" />
       <button className="bg-transparent border border-gray-400 px-2 py-2 rounded-r-md text-gray-800  hover:bg-green-400">Scan</button>
     </div>
 
-    {/* Icons */}
-    <div className="flex justify-left">
-      <FaPhone className="text-white text-xl mr-4 backdrop:line-through" />
-      <FaLinkedin className="text-white text-xl mr-4" />
-      <FaWhatsapp className="text-white text-xl" />
-    </div>
+    
   </form>
 
-  {/* Other content goes here */}
+  
 </div>
 </div>
+
+ 
+
     </>
     
   );
 };
 
 export default CyberSecurityPage;
-
